@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="23" total="31" passed="6" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-01T23:48:54 MYT" name="Suite" finished-at="2025-11-01T23:50:31 MYT" duration-ms="97268">
+    <groups>
+      <group name="Login">
+        <method signature="TC0001_LoginTest.loginTest(java.lang.String,java.lang.String)[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" name="loginTest" class="LoginTestCases.TC0001_LoginTest"/>
+        <method signature="TC0002_LoginTest.checkLoginLogoTest()[pri:0, instance:LoginTestCases.TC0002_LoginTest@2df3b89c]" name="checkLoginLogoTest" class="LoginTestCases.TC0002_LoginTest"/>
+        <method signature="TC0003_LoginTest.LogoutTest()[pri:0, instance:LoginTestCases.TC0003_LoginTest@23348b5d]" name="LogoutTest" class="LoginTestCases.TC0003_LoginTest"/>
+        <method signature="TC0004_LoginTest.verifyConfirmErrorMessage(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:LoginTestCases.TC0004_LoginTest@70325e14]" name="verifyConfirmErrorMessage" class="LoginTestCases.TC0004_LoginTest"/>
+        <method signature="TC0004_LoginTest.verifyCurrentErrorMessage(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:LoginTestCases.TC0004_LoginTest@70325e14]" name="verifyCurrentErrorMessage" class="LoginTestCases.TC0004_LoginTest"/>
+      </group> <!-- Login -->
+    </groups>
+    <test started-at="2025-11-01T23:48:54 MYT" name="Test" finished-at="2025-11-01T23:50:31 MYT" duration-ms="97268">
+      <class name="LoginTestCases.TC0004_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:08 MYT" name="setup" finished-at="2025-11-01T23:50:17 MYT" duration-ms="8332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:17 MYT" name="login" finished-at="2025-11-01T23:50:19 MYT" duration-ms="1729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyConfirmErrorMessage(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:19 MYT" name="verifyConfirmErrorMessage" data-provider="mismatchconfirmpassword" finished-at="2025-11-01T23:50:23 MYT" duration-ms="4006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmErrorMessage -->
+        <test-method is-config="true" signature="login()[pri:0, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:23 MYT" name="login" finished-at="2025-11-01T23:50:24 MYT" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyCurrentErrorMessage(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:24 MYT" name="verifyCurrentErrorMessage" data-provider="mismatchcurrentpassword" finished-at="2025-11-01T23:50:31 MYT" duration-ms="7094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCurrentErrorMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTestCases.TC0004_LoginTest@70325e14]" started-at="2025-11-01T23:50:31 MYT" name="teardown" finished-at="2025-11-01T23:50:31 MYT" duration-ms="536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginTestCases.TC0004_LoginTest -->
+      <class name="LoginTestCases.TC0003_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTestCases.TC0003_LoginTest@23348b5d]" started-at="2025-11-01T23:49:54 MYT" name="setup" finished-at="2025-11-01T23:50:02 MYT" duration-ms="8212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LogoutTest()[pri:0, instance:LoginTestCases.TC0003_LoginTest@23348b5d]" started-at="2025-11-01T23:50:02 MYT" name="LogoutTest" finished-at="2025-11-01T23:50:08 MYT" duration-ms="5621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTestCases.TC0003_LoginTest@23348b5d]" started-at="2025-11-01T23:50:08 MYT" name="teardown" finished-at="2025-11-01T23:50:08 MYT" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginTestCases.TC0003_LoginTest -->
+      <class name="LoginTestCases.TC0001_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:48:55 MYT" name="setup" finished-at="2025-11-01T23:49:09 MYT" duration-ms="13838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:49:12 MYT" name="loginTest" data-provider="login" finished-at="2025-11-01T23:49:16 MYT" duration-ms="4327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:49:16 MYT" name="loginTest" data-provider="login" finished-at="2025-11-01T23:49:28 MYT" duration-ms="11770" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[brogoyang1234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[brogoyang@1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at LoginTestCases.TC0001_LoginTest.loginTest(TC0001_LoginTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:49:28 MYT" name="loginTest" data-provider="login" finished-at="2025-11-01T23:49:40 MYT" duration-ms="11689" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.fail(Assert.java:116)
+at LoginTestCases.TC0001_LoginTest.loginTest(TC0001_LoginTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:49:40 MYT" name="loginTest" data-provider="login" finished-at="2025-11-01T23:49:44 MYT" duration-ms="4769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTestCases.TC0001_LoginTest@38afe297]" started-at="2025-11-01T23:49:44 MYT" name="teardown" finished-at="2025-11-01T23:49:45 MYT" duration-ms="576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginTestCases.TC0001_LoginTest -->
+      <class name="LoginTestCases.TC0002_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:LoginTestCases.TC0002_LoginTest@2df3b89c]" started-at="2025-11-01T23:49:45 MYT" name="setup" finished-at="2025-11-01T23:49:53 MYT" duration-ms="8421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkLoginLogoTest()[pri:0, instance:LoginTestCases.TC0002_LoginTest@2df3b89c]" started-at="2025-11-01T23:49:53 MYT" name="checkLoginLogoTest" finished-at="2025-11-01T23:49:53 MYT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginLogoTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LoginTestCases.TC0002_LoginTest@2df3b89c]" started-at="2025-11-01T23:49:53 MYT" name="teardown" finished-at="2025-11-01T23:49:54 MYT" duration-ms="599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LoginTestCases.TC0002_LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

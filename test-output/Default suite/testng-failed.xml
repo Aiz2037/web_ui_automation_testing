@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="DashboardTestCase.TC0001_DashboardTest">
+        <methods>
+          <include name="verifylaunchTitle"/>
+          <include name="verifysubunitTitle"/>
+          <include name="verifylocationTitle"/>
+          <include name="login"/>
+          <include name="verifytimeTitle"/>
+          <include name="verifyactionTitle"/>
+          <include name="verifyOnleaveTitle"/>
+          <include name="teardown"/>
+          <include name="verifyBuzzTitle"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- DashboardTestCase.TC0001_DashboardTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
